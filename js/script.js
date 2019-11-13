@@ -7,5 +7,22 @@
 
 
 
-// DOCUMENT READY FUNCTION BELOW
+// DOCUMENT READY FUNCTION BELOW 
+$("#shoot").click(function() { 
 
+var user = $("#input").val(); 
+    $("#userChoice").text(user)
+var computer = Math.random(); 
+
+if (computer > .67){ 
+    $("#computerChoice").text("rock"); 
+
+} else if (computer < .33){ 
+    $("#computerChoice").text("scissors"); 
+
+} else { 
+    $("#computerChoice").text("paper");
+}
+ 
+});
+ 
