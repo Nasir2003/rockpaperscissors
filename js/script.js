@@ -12,7 +12,9 @@ $("#shoot").click(function() {
 
 var user = $("#input").val(); 
     $("#userChoice").text(user)
-var computer = Math.random(); 
+var computer = Math.random();   
+
+var result = $(user === computer)
 
 if (computer > .67){ 
     $("#computerChoice").text("rock"); 
@@ -23,6 +25,11 @@ if (computer > .67){
 } else { 
     $("#computerChoice").text("paper");
 }
- 
+  
+if (user === "rock"){ 
+    result ="Tie";
+ $("#result").text(result);
+}
+
 });
  
