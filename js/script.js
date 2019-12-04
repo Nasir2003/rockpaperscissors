@@ -14,7 +14,7 @@ var user = $("#input").val();
     $("#userChoice").text(user)
 var computer = Math.random();   
 
-var result = $(user === computer)
+var result = $(user === computer);
 
 if (computer > .67){ 
     $("#computerChoice").text("rock"); 
@@ -26,9 +26,9 @@ if (computer > .67){
     $("#computerChoice").text("paper");
 }
   
-if (user === "rock"){ 
+if (user && computer === "rock"){ 
     result ="Tie";
- $("#result").text(result);
+ $("#result").text("Tie");
 }
 
 });
